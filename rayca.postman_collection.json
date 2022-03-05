@@ -1,0 +1,683 @@
+{
+	"info": {
+		"_postman_id": "41fae4af-9437-48f9-bdf6-03a2b541709a",
+		"name": "ryca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "user1",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "00000000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMjViZTBhZjE4NzVmNTRlOThmMzRiIiwiaWF0IjoxNjQ2NDE4OTE2LCJleHAiOjE2NDY4MTQ5MTZ9.3nLl0czScHDW46wQdB8Q0OjrZM6EfNSz8EBPywIcdUI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"task"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all task",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMjViZTBhZjE4NzVmNTRlOThmMzRiIiwiaWF0IjoxNjQ2NDE4OTE2LCJleHAiOjE2NDY4MTQ5MTZ9.3nLl0czScHDW46wQdB8Q0OjrZM6EfNSz8EBPywIcdUI",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, x-access-token, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1368"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"558-eMfAsflYa5FzLqSLDVSontEUrkc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 23:37:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": \"6222a24cd52d61990a7bebdc\",\n            \"title\": \"first title\",\n            \"description\": \"first description\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"6222a1fdd52d61990a7bebd8\",\n                \"name\": \"user1\"\n            }\n        },\n        {\n            \"id\": \"62226ecc0741ae97482ede7b\",\n            \"title\": \"grjfkojhft\",\n            \"description\": \"jdhhhd\",\n            \"status\": \"Deployed\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"6222688d4b0f2625abd227a7\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"622267fc585c4a2f8b070f8b\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"622267fa585c4a2f8b070f86\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"62226750d4d972c263010206\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"62226719d4d972c263010201\",\n            \"title\": \"grjfkojhft\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"622266f6556ca0d37e10f30a\",\n            \"title\": \"grjfkojhft\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        },\n        {\n            \"id\": \"622265a8eda941a2a652e84b\",\n            \"title\": \"grjfkojhft\",\n            \"description\": \"\",\n            \"status\": \"toDo\",\n            \"author\": {\n                \"id\": \"62225be0af1875f54e98f34b\",\n                \"name\": \"nahid\"\n            }\n        }\n    ],\n    \"total\": 9,\n    \"limit\": 30,\n    \"page\": 1,\n    \"pages\": 1,\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "edit status with id task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMjViZTBhZjE4NzVmNTRlOThmMzRiIiwiaWF0IjoxNjQ2NDE4OTE2LCJleHAiOjE2NDY4MTQ5MTZ9.3nLl0czScHDW46wQdB8Q0OjrZM6EfNSz8EBPywIcdUI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "Deployed",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/task/status/62226ecc0741ae97482ede7b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"status",
+						"62226ecc0741ae97482ede7b"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "62226ecc0741ae97482ede7b",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "edit status with id task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMjViZTBhZjE4NzVmNTRlOThmMzRiIiwiaWF0IjoxNjQ2NDE4OTE2LCJleHAiOjE2NDY4MTQ5MTZ9.3nLl0czScHDW46wQdB8Q0OjrZM6EfNSz8EBPywIcdUI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "Deployed",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/task/status/62226ecc0741ae97482ede7b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								"status",
+								"62226ecc0741ae97482ede7b"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62226ecc0741ae97482ede7b",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, x-access-token, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-fhyDcCUpxCa8SMa23b4XIOAHi6k\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 23:36:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"پست با موفقیت در حالت انتشار قرار گرفت\",\n    \"data\": {\n        \"id\": \"62226ecc0741ae97482ede7b\",\n        \"title\": \"grjfkojhft\",\n        \"description\": \"jdhhhd\",\n        \"status\": \"Deployed\"\n    },\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMmExZmRkNTJkNjE5OTBhN2JlYmQ4IiwiaWF0IjoxNjQ2NDM2ODkyLCJleHAiOjE2NDY4MzI4OTJ9.a2Os4qHjgZWGWMr6J80lH5F8ULmIQ2OSSXxgUJzWBE0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "first title",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "first description",
+							"type": "default"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/task/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMmExZmRkNTJkNjE5OTBhN2JlYmQ4IiwiaWF0IjoxNjQ2NDM2ODkyLCJleHAiOjE2NDY4MzI4OTJ9.a2Os4qHjgZWGWMr6J80lH5F8ULmIQ2OSSXxgUJzWBE0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "first title",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "first description",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/task/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, x-access-token, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "208"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d0-yamKXkG6WSTB4vII60eRnrd9Dlo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 23:35:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"پست متنی شما با موفقیت ذخیره گردید\",\n    \"data\": {\n        \"id\": \"6222a24cd52d61990a7bebdc\",\n        \"title\": \"first title\",\n        \"description\": \"first description\",\n        \"status\": \"toDo\"\n    },\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "00000000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "00000000",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, x-access-token, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "403"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"193-ryfPNS297/ibs+BitqOVPYKrsuk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 23:34:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"عزیز با موقییت لاگین شدید user1\",\n    \"user\": {\n        \"id\": \"6222a1fdd52d61990a7bebd8\",\n        \"name\": \"user1\",\n        \"email\": \"user@gmail.com\"\n    },\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIyMmExZmRkNTJkNjE5OTBhN2JlYmQ4IiwiaWF0IjoxNjQ2NDM2ODkyLCJleHAiOjE2NDY4MzI4OTJ9.a2Os4qHjgZWGWMr6J80lH5F8ULmIQ2OSSXxgUJzWBE0\",\n    \"token_type\": \"bearer\",\n    \"expires_in\": \"110h\",\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "user1",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "00000000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user1",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "00000000",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, x-access-token, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d-86hMcJTvIT4qbhW/BvyK6CRf13Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 23:34:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"ثبت نام با موفقیت انجام شد.\",\n    \"success\": true\n}"
+				}
+			]
+		}
+	]
+}
