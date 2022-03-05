@@ -84,13 +84,4 @@ module.exports = new class AuthController extends Controller {
 
     }
 
-    async logout(req, res) {
-
-        req.user.deleteToken(req.token,(err,user)=>{
-            if(err) return res.status(400).send(err);
-            res.sendStatus(200);
-        });
-
-    }
-
 }
